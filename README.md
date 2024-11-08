@@ -1,7 +1,7 @@
 Ansible Role to Install GNS3 Server
 =========
 
-Ansible role to install GNS3: Server, Dynamips, uBridge and IOUYAP
+Ansible role to install GNS3: Server (2.x+), Dynamips and uBridge.
 
 Role Variables
 --------------
