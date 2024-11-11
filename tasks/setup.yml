@@ -15,6 +15,14 @@
     password: "{{ _gns3_server_service.password }}"
     system: yes
 
+- name: "setup: Ensure system user is part the kvm group"
+  become: true
+  become_user: root
+  user:
+    name: "{{ _gns3_server_service.user }}"
+    groups: kvm
+    append: True
+
 - name: "setup: Ensure state of paths"
   become: true
   become_user: root
